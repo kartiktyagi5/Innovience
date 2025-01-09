@@ -1,0 +1,231 @@
+.hackathons-page-hackton {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section-hackton {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80') center/cover;
+}
+
+.hero-content-hackton {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-content-hackton h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content-hackton p {
+  font-size: 20px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+/* Benefits Section */
+.benefits-section-hackton {
+  padding: 80px 20px;
+}
+
+.benefits-section-hackton h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.benefits-grid-hackton {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-card-hackton {
+  background-color: #1f2937;
+  padding: 24px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.benefit-card-hackton:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon-hackton {
+  color: #3b82f6;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+.benefit-card-hackton h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.benefit-card-hackton p {
+  color: #9ca3af;
+}
+
+/* Upcoming Hackathons Section */
+.upcoming-section-hackton {
+  padding: 80px 20px;
+  background-color: #111827;
+}
+
+.upcoming-section-hackton h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.hackathons-grid-hackton {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hackathon-card-hackton {
+  background-color: #1f2937;
+  padding: 24px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.hackathon-card-hackton:hover {
+  transform: translateY(-5px);
+}
+
+.hackathon-card-hackton h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hackathon-details-hackton {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.detail-item-hackton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #9ca3af;
+}
+
+.detail-icon-hackton {
+  color: #3b82f6;
+  width: 20px;
+  height: 20px;
+}
+
+.hackathon-description-hackton {
+  color: #9ca3af;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.register-button-hackton {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-button-hackton:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.register-button-hackton.registered-hackton {
+  background-color: #059669;
+  cursor: default;
+}
+
+/* Requirements Section */
+.requirements-section-hackton {
+  padding: 80px 20px;
+}
+
+.requirements-section-hackton h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.requirements-list-hackton {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.requirement-item-hackton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #1f2937;
+  padding: 16px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.requirement-item-hackton:hover {
+  transform: translateX(10px);
+}
+
+.requirement-icon-hackton {
+  color: #3b82f6;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content-hackton h1 {
+    font-size: 36px;
+  }
+
+  .benefits-grid-hackton {
+    grid-template-columns: 1fr;
+  }
+
+  .hackathons-grid-hackton {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content-hackton h1 {
+    font-size: 28px;
+  }
+
+  .hero-content-hackton p {
+    font-size: 16px;
+  }
+
+  .benefit-card-hackton,
+  .hackathon-card-hackton,
+  .requirement-item-hackton {
+    padding: 16px;
+  }
+}

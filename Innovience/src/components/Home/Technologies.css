@@ -1,0 +1,184 @@
+.technologies-container { 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 0rem;
+  background-color: #141420; 
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem; 
+  font-weight: bold;
+  color: var(--primary-color); 
+}
+
+.tech-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .underline {
+  width: 6rem;
+  height: 2px;
+  background-color: var(--highlight-color); 
+  margin: 0.75rem auto 0;
+}
+
+.scroll-container {
+  position: relative;
+  overflow: hidden;
+  margin: 0 5%;
+  padding: 2.5rem 0;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.scroll-track {
+  display: flex;
+  width: fit-content;
+}
+
+.scroll-content {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+  animation: scroll 500s linear infinite;
+ 
+}
+
+@keyframes scroll {
+  from {
+    transform: translate(0%);
+  }
+  to{
+    transform: translate(100%);
+  }
+}
+
+.scroll-content.paused {
+  animation-play-state: paused;
+}
+
+.tech-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 130px;
+  border-radius: 0.75rem;
+  background: linear-gradient(45deg, #111827, #8593a7);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9; 
+}
+
+.tech-item:hover {
+  background-color: rgba(31, 41, 55, 0.8);
+  transform: scale(1.05) rotate(-2deg);
+  opacity: 1;
+}
+
+.tech-item .tech-icon {
+  height: 35%;
+  width: 35%;
+  transition: all 0.3s ease-in-out;
+  z-index: -1;
+  color:white;
+}
+
+.tech-item:hover .tech-icon {
+  height: 60%;
+  width: 60%;
+  filter: blur(4px); 
+ 
+}
+
+.tech-item .tech-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  color: var(--highlight-color); /* Highlight text on hover */
+  font-size: 0.9rem;
+  font-weight: bold;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tech-item:hover .tech-name {
+  opacity: 1;
+}
+
+.tech-section {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 5%;
+  margin-top: 40px;
+}
+
+.text-card {
+  background:#111827;
+  backdrop-filter: blur(10px); 
+  border: 1px solid var(--border-color); /* Subtle border */
+  color: var(--text-color-primary); /* Readable text color */
+  width: 100%;
+  max-width: 480px;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 4rem;
+}
+
+.text-card img {
+  height: 5rem;
+  width: auto;
+}
+
+.text-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.card-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--primary-color); /* Accent color for headings */
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color-primary); /* Better readability */
+}

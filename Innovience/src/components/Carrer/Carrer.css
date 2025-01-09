@@ -1,0 +1,268 @@
+.career-page-carrer {
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  /* Hero Section */
+  .hero-section-carrer {
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80') center/cover;
+  }
+  
+  .hero-content-carrer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .hero-content-carrer h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content-carrer p {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons */
+  .primary-button-carrer {
+    background-color: #3b82f6;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .primary-button-carrer:hover {
+    background-color: #2563eb;
+  }
+  
+  /* Career Path Section */
+  .career-path-section-carrer {
+    padding: 80px 20px;
+  }
+  
+  .career-path-section-carrer h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .career-path-grid-carrer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .career-path-card-carrer {
+    background-color: #1f2937;
+    padding: 24px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+  }
+  
+  .career-path-card-carrer:hover {
+    transform: translateY(-5px);
+  }
+  
+  .path-icon-carrer {
+    color: #3b82f6;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .career-path-card-carrer h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .career-path-card-carrer .role-carrer {
+    color: #3b82f6;
+    margin-bottom: 12px;
+  }
+  
+  .career-path-card-carrer p {
+    color: #9ca3af;
+  }
+  
+  /* Positions Section */
+  .positions-section-carrer {
+    padding: 80px 20px;
+    background-color: #111827;
+  }
+  
+  .positions-section-carrer h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .positions-grid-carrer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .position-card-carrer {
+    background-color: #1f2937;
+    padding: 24px;
+    border-radius: 12px;
+    transition: background-color 0.3s;
+  }
+  
+  .position-card-carrer:hover {
+    background-color: #374151;
+  }
+  
+  .position-header-carrer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .position-icon-carrer {
+    color: #3b82f6;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .position-details-carrer {
+    display: flex;
+    gap: 16px;
+    color: #9ca3af;
+    margin-bottom: 20px;
+  }
+  
+  .apply-button-carrer {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .apply-button-carrer:hover {
+    background-color: #3b82f6;
+    color: white;
+  }
+  
+  /* Benefits Section */
+  .benefits-section-carrer {
+    padding: 80px 20px;
+  }
+  
+  .benefits-section-carrer h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .benefits-grid-carrer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .benefit-card-carrer {
+    background-color: #1f2937;
+    padding: 24px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+  }
+  
+  .benefit-card-carrer:hover {
+    transform: translateY(-5px);
+  }
+  
+  .benefit-icon-carrer {
+    color: #3b82f6;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .benefit-card-carrer h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .benefit-card-carrer p {
+    color: #9ca3af;
+  }
+  
+  /* Culture Section */
+  .culture-section-carrer {
+    padding: 80px 20px;
+    background-color: #111827;
+  }
+  
+  .culture-content-carrer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .culture-text-carrer h2 {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+  
+  .culture-text-carrer p {
+    color: #9ca3af;
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+  
+  .culture-image-carrer img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-content-carrer h1 {
+      font-size: 36px;
+    }
+  
+    .culture-content-carrer {
+      grid-template-columns: 1fr;
+    }
+  
+    .culture-image-carrer {
+      order: -1;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content-carrer h1 {
+      font-size: 28px;
+    }
+  
+    .position-details-carrer {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }

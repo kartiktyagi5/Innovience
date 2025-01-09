@@ -1,0 +1,150 @@
+/* :root {
+  --color-footer-bg: #111827;
+  --color-border-top: rgb(45, 45, 45);
+  --color-text-primary: white;
+  --color-text-secondary: #9ca3af;
+  --color-whatsapp-bg: #0d6c2d;
+  --color-newsletter-bg: #374151;
+  --color-newsletter-button-bg: #2563eb;
+  --color-social-icon-hover: white;
+  --color-footer-bottom-border: #374151;
+} */
+
+.footer {
+  background-color: var(--background-color);
+  padding: 1rem 0;
+  border-top: 2px solid var(--card-border-color);
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+  margin-left: -70px;
+  margin-right: -30px;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footer-section {
+  margin-bottom: 1.5rem;
+}
+
+.footer-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.75rem;
+}
+
+.footer-text {
+  color: var(--text-color-secondary);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.footer-link {
+  color: var(--text-color-secondary);
+  text-decoration: none;
+  display: block;
+  padding: 0.2rem 0;
+}
+
+.footer-link:hover {
+  color: var(--text-color-primary);
+}
+
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  position: relative;
+  top: 10px;
+  width: 190px;
+}
+
+.whatsapp-icon {
+  width: 18px;
+  height: 18px;
+  margin-right: 0.5rem;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-input {
+  background-color: var(--card-bg-color);
+  color: var(--text-color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  flex: 1;
+  font-size: 0.875rem;
+}
+
+.newsletter-button {
+  background-color: var(--highlight-color);
+  color: var(--text-color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.newsletter-icon {
+  width: 18px;
+  height: 18px;
+  color: white;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  color: var(--text-color-secondary);
+  font-size: 1.75rem;
+}
+
+.social-icon:hover {
+  color: var(--highlight-color);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--card-border-color);
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  color: var(--text-color-secondary);
+  font-size: 0.875rem;
+}
+
+.footer-text p {
+  word-wrap: break-word;
+  white-space: normal;
+}

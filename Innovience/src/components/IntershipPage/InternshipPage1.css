@@ -1,0 +1,166 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.addintern-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Section styles */
+.addintern-section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.addintern-section-title {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.addintern-section-subtitle {
+  font-size: 20px;
+  color: #94a3b8;
+  margin-bottom: 48px;
+}
+
+/* Card grid layouts */
+.addintern-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.addintern-advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.addintern-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.addintern-journey-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Card styles */
+.addintern-card {
+  background-color: #111827;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.addintern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.addintern-card-icon {
+  color: #60a5fa;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.addintern-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.addintern-card-description {
+  color: #94a3b8;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Journey card specific styles */
+.addintern-journey-card {
+  text-align: center;
+  position: relative;
+  padding-top: 48px;
+}
+
+.addintern-journey-icon {
+  background-color: #1e293b;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+}
+
+.addintern-journey-week {
+  color: #60a5fa;
+  margin-bottom: 8px;
+}
+
+/* Timeline connector */
+.addintern-journey-card::after {
+  content: '';
+    position: absolute;
+    top: 130px;
+    right: -27px;
+    width: calc(22% - 25px);
+    height: 3px;
+    background-color: white;
+    z-index: 0;
+}
+
+.addintern-journey-card:last-child::after {
+  display: none;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .addintern-benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .addintern-skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .addintern-advantages-grid,
+  .addintern-journey-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .addintern-skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .addintern-journey-card::after {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .addintern-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .addintern-skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

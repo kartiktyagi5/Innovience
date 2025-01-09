@@ -1,0 +1,154 @@
+
+.main-home{
+  background-color: #141420;
+}
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 8rem 4rem;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.home-content {
+  flex: 1;
+  margin-right: 50px;
+  margin-top: -4em;
+}
+.get-ahead{
+  color: #2563eb;
+}
+
+.home-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  line-height: 1.1;
+  letter-spacing: -2.5px;
+}
+
+
+.home-subtitle {
+  font-size: 18px;
+  color: var(--gradient-primary);
+  margin-bottom: 30px;
+  line-height: 1.9;
+  letter-spacing: 1.5px;
+}
+
+.line {
+  margin-bottom: 25px;
+  height: 0.3rem;
+  width: 7.5rem;
+  background: var(--gradient-primary);
+  border-radius: 20px;
+}
+
+.home-button {
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--main-color);
+  background: linear-gradient(50deg, #3257a8, #ccd6e4);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  min-height: 64px;
+  min-width: 250px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.home-button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home-button .span-mother,
+.home-button .span-mother2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.home-button .span-mother {
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
+.home-button .span-mother2 {
+  top: 50%;
+  transform: translateY(100%);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.home-button:hover .span-mother {
+  transform: translateY(-150%);
+  opacity: 0;
+}
+
+.home-button:hover .span-mother2 {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.home-button .span-mother span,
+.home-button .span-mother2 span {
+  display: inline-block;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0 1px;
+}
+
+.home-button .span-mother span:nth-child(4),
+.home-button .span-mother2 span:nth-child(4),
+.home-button .span-mother span:nth-child(12),
+.home-button .span-mother2 span:nth-child(12) {
+  margin: 0 6px;
+}
+
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  height: 47vh;
+ 
+  border-radius: 20px;
+}
+
+.rounded-image {
+  width: 117%;
+  height: 135%;
+  object-fit: cover;
+  position: absolute;
+  top: -99px;
+  left: -3.5rem;
+  background-size: cover;
+  border-radius: 20px;
+}
+.home-image::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  
+}

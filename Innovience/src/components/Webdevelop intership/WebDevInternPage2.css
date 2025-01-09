@@ -1,0 +1,111 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: white;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  /* Main container */
+  .containerweb {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  /* Section styles */
+  .sectionweb {
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  /* Headings */
+  .headingweb {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subheadingweb {
+    color: #3b82f6;
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  /* Grid layouts */
+  .skills-gridweb {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .companies-gridweb {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Card styles */
+  .cardweb {
+    background-color: #0f1318;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.2s;
+  }
+  
+  .cardweb:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Icon styles */
+  .iconweb {
+    color: #3b82f6;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .company-iconweb {
+    color: #4b5563;
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Text styles */
+  .card-textweb {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 1024px) {
+    .skills-gridweb {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .companies-gridweb {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .skills-gridweb {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .companies-gridweb {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .headingweb {
+      font-size: 2rem;
+    }
+  }

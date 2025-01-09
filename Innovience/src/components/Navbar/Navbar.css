@@ -1,0 +1,82 @@
+/* :root{
+ --primary-color:rgb(21, 21, 22);
+ --secondary-color:gray;
+ --text-color:white;
+ --secondary-text-color:blue;
+ --icon-color:salmon;
+} */
+
+
+.navbar {
+  background-color:#141420; 
+  color: var(--text-color-primary);  
+  padding: 4px 0;
+  /* 
+  position: fixed;
+  width: 100%;
+  z-index: 11111;
+  */
+ 
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* text-align: left ; */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--highlight-color); 
+}
+
+.navbar-logo img {
+  z-index: 111;
+  filter: invert(1) brightness(2);  
+  height: 7rem;
+  margin-top: -10px;
+  margin-bottom: -45px;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white; 
+  font-size: 16px;
+  position: relative;
+  transition: color var(--transition-duration) var(--transition-bezier);
+}
+
+.navbar-links a:hover {
+  color: #2563eb;  
+  transition: color var(--transition-duration) var(--transition-bezier);
+}
+
+.navbar-links a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--highlight-color);  
+  transition: width var(--transition-duration) var(--transition-bezier);
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.navbar-links a:hover::after {
+  width: 100%; 
+}

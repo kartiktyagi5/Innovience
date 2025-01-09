@@ -1,0 +1,169 @@
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+/* Hero section */
+.hero-inter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6rem;
+  gap: 4rem;
+}
+
+.hero-content-inter {
+  flex: 1;
+}
+
+.hero-image-inter {
+  flex: 1;
+}
+
+.hero-image-inter img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  position: relative;
+  top: 5px;
+ 
+}
+
+.hero-inter h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero-inter p {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+.features-inter {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.feature-inter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+}
+
+.feature-inter svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #3b82f6;
+}
+
+/* Domains section */
+.domains-inter {
+  padding: 4rem 6rem;
+}
+
+.domains-header-inter {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.domains-header-inter h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.domains-header-inter p {
+  color: #94a3b8;
+  font-size: 1.25rem;
+}
+
+.domains-grid-inter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.domain-card-inter {
+  background-color: #1a1a1a;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.domain-icon-inter {
+  width: 3rem;
+  height: 3rem;
+  background-color: #1e3a8a;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.domain-icon-inter svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #3b82f6;
+}
+
+.domain-card-inter h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.domain-card-inter p {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+  max-height: auto;
+}
+
+.domain-info-inter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #94a3b8;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+ 
+}
+
+.domain-info-inter svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Button styles */
+.button-inter {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.button-inter:hover {
+  background-color: #2563eb;
+}
+
+.button-wide-inter {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+
+}

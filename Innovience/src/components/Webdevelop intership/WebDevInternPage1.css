@@ -1,0 +1,181 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background: linear-gradient(180deg, #0a0a0a 0%, #1a1a2e 100%);
+    color: white;
+    min-height: 100vh;
+  }
+  
+  /* Header styles */
+  .header-web {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .header-web h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .header-web h1 .highlight-web {
+    color: #3b82f6;
+  }
+  
+  /* Features grid */
+  .features-grid-web {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .feature-card-web {
+    background: rgba(17, 24, 39, 0.8);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .feature-icon-web {
+    width: 48px;
+    height: 48px;
+    background: #1e3a8a;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3b82f6;
+  }
+  
+  .feature-content-web h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: white;
+  }
+  
+  .feature-content-web p {
+    margin: 8px 0 0;
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+  
+  /* Quote section */
+  .quote-section-web {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 1.5rem;
+    font-style: italic;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .quote-section-web .highlight-web {
+    color: #3b82f6;
+  }
+  
+  /* CTA section */
+  .cta-section-web {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .cta-section-web h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .cta-section-web p {
+    color: #3b82f6;
+    font-size: 1.25rem;
+    margin: 16px 0 32px;
+  }
+  
+  .enroll-button-web {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .enroll-button-web:hover {
+    background: #2563eb;
+  }
+  
+  /* Career opportunities */
+  .careers-section-web {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .careers-section-web h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .careers-section-web h2 .highlight-web {
+    color: #3b82f6;
+  }
+  
+  .careers-grid-web {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  
+  .career-card-web {
+    background:black;
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .career-card-web:hover {
+    transform: translateY(-4px);
+  }
+  
+  .career-icon-web {
+    width: 40px;
+    height: 40px;
+    color: #3b82f6;
+  }
+  
+  .career-title-web {
+    font-size: 1.125rem;
+    margin: 0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .features-grid-web,
+    .careers-grid-web {
+      grid-template-columns: 1fr;
+    }
+  
+    .header-web h1,
+    .cta-section-web h2,
+    .careers-section-web h2 {
+      font-size: 2rem;
+    }
+  
+    .quote-section-web {
+      font-size: 1.25rem;
+    }
+  }
+  

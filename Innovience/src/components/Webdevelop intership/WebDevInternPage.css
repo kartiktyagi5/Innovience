@@ -1,0 +1,191 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+.web-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Hero section */
+.web-hero {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 0;
+}
+
+.web-hero-content {
+    flex: 1;
+}
+
+.web-hero-video {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+}
+
+.web-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.web-hero p {
+    font-size: 1rem;
+    color: #94a3b8;
+    margin-bottom: 2rem;
+}
+
+/* Features list */
+.web-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.web-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.web-feature-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #1d4ed8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Apply button */
+.web-apply-button {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.web-apply-button:hover {
+    background-color: #2563eb;
+}
+
+/* Quick highlights */
+.web-highlights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.web-highlight-card {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.web-highlight-card:hover {
+    transform: translateY(-5px);
+}
+
+.web-highlight-icon {
+    color: #60a5fa;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.web-highlight-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.web-highlight-description {
+    color: #94a3b8;
+    font-size: 0.875rem;
+}
+
+/* Learning journey */
+.web-journey {
+    margin: 4rem 0;
+}
+
+.web-journey h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.web-journey-steps {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.web-journey-step {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-left: 3rem;
+}
+
+.web-journey-step::before {
+    content: '';
+    position: absolute;
+    left: 1.5rem;
+    top:40px;
+    bottom: -6rem;
+    width: 2px;
+    background-color: #1d4ed8;
+   
+}
+
+.web-journey-step:last-child::before {
+    display: none;
+}
+
+.web-step-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #1d4ed8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 40px;
+}
+
+.web-step-content {
+    background-color: #1e293b;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1;
+}
+
+.web-step-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.web-step-description {
+    color: #94a3b8;
+}

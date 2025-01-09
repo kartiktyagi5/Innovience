@@ -1,0 +1,72 @@
+:root {
+  /* Primary and Secondary Colors */
+  --primary-color: #ffffff; 
+  --secondary-color: #4C4747; 
+  --accent-color: #FF9A44; 
+
+  /* Text Colors */
+  --text-color-primary: #94a3b8; 
+  --text-color-secondary: #B2B2B2;
+  --text-color-muted: rgba(255, 255, 255, 0.7);
+
+  /* Background Colors */
+  --background-color: #141420; 
+  --background-gradient: linear-gradient(180deg, rgb(9, 9, 45), rgb(20, 20, 20)); 
+  --card-bg-color: #1B2430; 
+
+  /* Hover and Interactive Colors */
+  --hover-bg-color: #2E3C50;
+  --hover-shadow: rgba(255, 255, 255, 0.3); 
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #FF5A5F, #2563eb); 
+  --gradient-hover: linear-gradient(90deg, #FF5A5F, #FF9A44);
+  --gradient-bg: linear-gradient(145deg, #d0d0d0, #eaeaea);
+
+  /* Shadows and Borders */
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-border-color: rgba(255, 255, 255, 0.1); 
+  --deep-shadow: rgba(0, 0, 0, 0.2); 
+  --transition-duration: 0.3s; 
+  --transition-bezier: cubic-bezier(0.4, 0, 0.2, 1); 
+
+  /* Specific Component Colors */
+  --highlight-color: #2563eb; 
+  --icon-bg-color: #4A5E7C; 
+  --star-color: #FFCF40; 
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+
+ ::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--card-bg-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: background-color var(--transition-duration);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-color);
+}
